@@ -19,6 +19,8 @@
 		84215F0A16BB802100413DDA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84215F0816BB802100413DDA /* MainStoryboard_iPhone.storyboard */; };
 		84215F0D16BB802100413DDA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84215F0B16BB802100413DDA /* MainStoryboard_iPad.storyboard */; };
 		84215F1016BB802100413DDA /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84215F0F16BB802100413DDA /* STViewController.m */; };
+		84215F1816BB809700413DDA /* STFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84215F1716BB809700413DDA /* STFlipView.m */; };
+		84215F1A16BB82C900413DDA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84215F1916BB82C900413DDA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		84215F0C16BB802100413DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		84215F0E16BB802100413DDA /* STViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STViewController.h; sourceTree = "<group>"; };
 		84215F0F16BB802100413DDA /* STViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
+		84215F1616BB809700413DDA /* STFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlipView.h; sourceTree = "<group>"; };
+		84215F1716BB809700413DDA /* STFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlipView.m; sourceTree = "<group>"; };
+		84215F1916BB82C900413DDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84215F1A16BB82C900413DDA /* QuartzCore.framework in Frameworks */,
 				84215EF116BB802100413DDA /* UIKit.framework in Frameworks */,
 				84215EF316BB802100413DDA /* Foundation.framework in Frameworks */,
 				84215EF516BB802100413DDA /* CoreGraphics.framework in Frameworks */,
@@ -58,6 +64,7 @@
 		84215EE416BB802100413DDA = {
 			isa = PBXGroup;
 			children = (
+				84215F1916BB82C900413DDA /* QuartzCore.framework */,
 				84215EF616BB802100413DDA /* DemoFlipView */,
 				84215EEF16BB802100413DDA /* Frameworks */,
 				84215EEE16BB802100413DDA /* Products */,
@@ -92,6 +99,8 @@
 				84215F0E16BB802100413DDA /* STViewController.h */,
 				84215F0F16BB802100413DDA /* STViewController.m */,
 				84215EF716BB802100413DDA /* Supporting Files */,
+				84215F1616BB809700413DDA /* STFlipView.h */,
+				84215F1716BB809700413DDA /* STFlipView.m */,
 			);
 			path = DemoFlipView;
 			sourceTree = "<group>";
@@ -181,6 +190,7 @@
 				84215EFD16BB802100413DDA /* main.m in Sources */,
 				84215F0116BB802100413DDA /* STAppDelegate.m in Sources */,
 				84215F1016BB802100413DDA /* STViewController.m in Sources */,
+				84215F1816BB809700413DDA /* STFlipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +323,7 @@
 				84215F1516BB802100413DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
