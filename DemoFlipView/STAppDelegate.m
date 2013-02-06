@@ -7,15 +7,44 @@
 //
 
 #import "STAppDelegate.h"
+#import "STViewController.h"
+#import "STFlipView.h"
 
 @implementation STAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.transitionController = [[TransitionController alloc] initWithViewController:self.window.rootViewController];
+    self.window.rootViewController = self.transitionController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
-							
+
+//- (void)transitionToViewController:(UIViewController *)viewController
+//                    withTransition:(UIViewAnimationOptions)transition
+//{
+//    [UIView transitionFromView:self.window.rootViewController.view
+//                        toView:viewController.view
+//                      duration:0.65f
+//                       options:transition
+//                    completion:^(BOOL finished){
+//                        self.window.rootViewController = viewController;
+//                    }];
+//}
+//
+//- (void)transitionFromUIView:(UIView*)view
+//            toViewController:(UIViewController *)viewController
+//              withTransition:(UIViewAnimationOptions)transition
+//{
+//    [UIView transitionFromView:view
+//                        toView:viewController.view
+//                      duration:0.65f
+//                       options:transition
+//                    completion:^(BOOL finished){
+//                        self.window.rootViewController = viewController;
+//                    }];
+//}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

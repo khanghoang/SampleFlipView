@@ -1,0 +1,13 @@
+TransitionController
+
+A UIViewController subclass that allows for easy transitions to new view controllers in any orientation with a specified transition options.
+
+instance methods
+
+- (void)initWithViewController:(UIViewController *)viewController
+
+Initializes a new TransitionController displaying the specified viewController.
+
+- (void)transitionToViewController:(UIViewController *)viewController withOptions:(UIViewAnimationOptions)options
+
+Transitions to a new view controller with the specified options.

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841E522C16C1F9EC00D0F96C /* TransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E522B16C1F9EC00D0F96C /* TransitionController.m */; };
+		841E522E16C2017600D0F96C /* car.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 841E522D16C2017600D0F96C /* car.jpg */; };
+		841E523116C203D500D0F96C /* STFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 841E523016C203D400D0F96C /* STFlipView.m */; };
 		84215EF116BB802100413DDA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84215EF016BB802100413DDA /* UIKit.framework */; };
 		84215EF316BB802100413DDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84215EF216BB802100413DDA /* Foundation.framework */; };
 		84215EF516BB802100413DDA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84215EF416BB802100413DDA /* CoreGraphics.framework */; };
@@ -19,11 +22,16 @@
 		84215F0A16BB802100413DDA /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84215F0816BB802100413DDA /* MainStoryboard_iPhone.storyboard */; };
 		84215F0D16BB802100413DDA /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84215F0B16BB802100413DDA /* MainStoryboard_iPad.storyboard */; };
 		84215F1016BB802100413DDA /* STViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84215F0F16BB802100413DDA /* STViewController.m */; };
-		84215F1816BB809700413DDA /* STFlipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84215F1716BB809700413DDA /* STFlipView.m */; };
 		84215F1A16BB82C900413DDA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84215F1916BB82C900413DDA /* QuartzCore.framework */; };
+		848F974116BF56E400450D52 /* STFlipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 848F974016BF56E400450D52 /* STFlipViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		841E522A16C1F9EC00D0F96C /* TransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionController.h; sourceTree = "<group>"; };
+		841E522B16C1F9EC00D0F96C /* TransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionController.m; sourceTree = "<group>"; };
+		841E522D16C2017600D0F96C /* car.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = car.jpg; sourceTree = "<group>"; };
+		841E522F16C203D400D0F96C /* STFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlipView.h; sourceTree = "<group>"; };
+		841E523016C203D400D0F96C /* STFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlipView.m; sourceTree = "<group>"; };
 		84215EED16BB802100413DDA /* DemoFlipView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoFlipView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84215EF016BB802100413DDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		84215EF216BB802100413DDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -41,9 +49,9 @@
 		84215F0C16BB802100413DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		84215F0E16BB802100413DDA /* STViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STViewController.h; sourceTree = "<group>"; };
 		84215F0F16BB802100413DDA /* STViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STViewController.m; sourceTree = "<group>"; };
-		84215F1616BB809700413DDA /* STFlipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlipView.h; sourceTree = "<group>"; };
-		84215F1716BB809700413DDA /* STFlipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlipView.m; sourceTree = "<group>"; };
 		84215F1916BB82C900413DDA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		848F973F16BF56E400450D52 /* STFlipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFlipViewController.h; sourceTree = "<group>"; };
+		848F974016BF56E400450D52 /* STFlipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFlipViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,9 +106,13 @@
 				84215F0B16BB802100413DDA /* MainStoryboard_iPad.storyboard */,
 				84215F0E16BB802100413DDA /* STViewController.h */,
 				84215F0F16BB802100413DDA /* STViewController.m */,
+				841E522A16C1F9EC00D0F96C /* TransitionController.h */,
+				841E522B16C1F9EC00D0F96C /* TransitionController.m */,
+				848F974016BF56E400450D52 /* STFlipViewController.m */,
+				848F973F16BF56E400450D52 /* STFlipViewController.h */,
 				84215EF716BB802100413DDA /* Supporting Files */,
-				84215F1616BB809700413DDA /* STFlipView.h */,
-				84215F1716BB809700413DDA /* STFlipView.m */,
+				841E522F16C203D400D0F96C /* STFlipView.h */,
+				841E523016C203D400D0F96C /* STFlipView.m */,
 			);
 			path = DemoFlipView;
 			sourceTree = "<group>";
@@ -108,6 +120,7 @@
 		84215EF716BB802100413DDA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				841E522D16C2017600D0F96C /* car.jpg */,
 				84215EF816BB802100413DDA /* DemoFlipView-Info.plist */,
 				84215EF916BB802100413DDA /* InfoPlist.strings */,
 				84215EFC16BB802100413DDA /* main.m */,
@@ -177,6 +190,7 @@
 				84215F0716BB802100413DDA /* Default-568h@2x.png in Resources */,
 				84215F0A16BB802100413DDA /* MainStoryboard_iPhone.storyboard in Resources */,
 				84215F0D16BB802100413DDA /* MainStoryboard_iPad.storyboard in Resources */,
+				841E522E16C2017600D0F96C /* car.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +204,9 @@
 				84215EFD16BB802100413DDA /* main.m in Sources */,
 				84215F0116BB802100413DDA /* STAppDelegate.m in Sources */,
 				84215F1016BB802100413DDA /* STViewController.m in Sources */,
-				84215F1816BB809700413DDA /* STFlipView.m in Sources */,
+				848F974116BF56E400450D52 /* STFlipViewController.m in Sources */,
+				841E522C16C1F9EC00D0F96C /* TransitionController.m in Sources */,
+				841E523116C203D500D0F96C /* STFlipView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

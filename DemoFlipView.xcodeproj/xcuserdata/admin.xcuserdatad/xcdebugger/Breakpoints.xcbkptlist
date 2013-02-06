@@ -8,13 +8,20 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "DemoFlipView/STFlipView.m"
-         timestampString = "381396530.079466"
+         timestampString = "381819174.653555"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "45"
-         endingLineNumber = "45"
-         landmarkName = "-touchesBegan:withEvent:"
-         landmarkType = "5">
+         startingLineNumber = "56"
+         endingLineNumber = "56">
       </FileBreakpoint>
    </FileBreakpoints>
+   <ExceptionBreakpoints>
+      <ExceptionBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         scope = "0"
+         stopOnStyle = "0">
+      </ExceptionBreakpoint>
+   </ExceptionBreakpoints>
 </Bucket>

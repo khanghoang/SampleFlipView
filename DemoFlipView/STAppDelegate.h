@@ -7,9 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TransitionController.h"
 
 @interface STAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) TransitionController *transitionController;
+
+//- (void)transitionToViewController:(UIViewController *)viewController
+//                    withTransition:(UIViewAnimationOptions)transition;
 
 @end
