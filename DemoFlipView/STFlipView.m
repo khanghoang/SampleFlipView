@@ -32,11 +32,14 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-
-
-//    [appDelegate.transitionController transitionFromUIView:self toViewController:destinationVC withTransition:UIViewAnimationOptionTransitionFlipFromRight];
+    UIViewController* destinationVC = [[UIViewController alloc]init];
+    destinationVC.view.backgroundColor = [UIColor blueColor];
+    STAppDelegate *appDelegate = [UIApplication sharedApplication].delegate;
     
-    
+    [appDelegate.transitionController transitionFromUIView:self
+                                          toViewController:destinationVC
+                                            withTransition:UIViewAnimationOptionTransitionFlipFromRight
+                                                 withSpeed:1.0f];
 }
 
 @end

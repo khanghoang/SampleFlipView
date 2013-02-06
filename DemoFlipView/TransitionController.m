@@ -67,31 +67,51 @@
                     }];
 }
 
+
 - (void)transitionFromUIView:(UIView*)view
             toViewController:(UIViewController *)viewController
               withTransition:(UIViewAnimationOptions)transition
+                   withSpeed:(float)speed
 {
-    viewController.view.frame = view.frame;
+    viewController.view.frame = view.bounds;
     
     [UIView transitionWithView:view
-                      duration:1.0f
+                      duration:speed
                        options:transition
                     animations:^{
-                        
-                        CATransform3D t = view.layer.transform;
-                        t = CATransform3DTranslate(t, 0.0f, -view.bounds.size.height/2.0f, 0.0f);
-                        t = CATransform3DRotate(t, M_PI, 0.0f, 1.0f, 0.0f);
-                        t = CATransform3DTranslate(t, 0.0f, view.bounds.size.height/2.0f, 0.0f);
-                        view.layer.transform = t;
-                        
-                        viewController.view.frame = self.containerView.bounds;
-                        [self.viewController.view removeFromSuperview];
-                        [self.containerView addSubview:viewController.view];
-                        
-                        
+                        [view addSubview:viewController.view];
                     }
                     completion:^(BOOL finished){
-                        self.viewController = viewController;
-                    }];}
+                        [self presentModalViewController:viewController animated:NO];
+                    }];
+    
+    [UIView animateWithDuration:speed animations:^{
+        view.frame = [[UIScreen mainScreen] bounds];
+    }];
+    
+}
 
+- (void)transitionFromUIView:(UIView*)view
+          fromViewController:(UIViewController*)fromViewController
+            toViewController:(UIViewController *)viewController
+              withTransition:(UIViewAnimationOptions)transition
+                   withSpeed:(float)speed
+{
+    viewController.view.frame = view.bounds;
+    
+    [UIView transitionWithView:view
+                      duration:speed
+                       options:transition
+                    animations:^{
+                        [view addSubview:viewController.view];
+                    }
+                    completion:^(BOOL finished){
+                        [self presentModalViewController:viewController animated:NO];
+                    }];
+
+    [UIView animateWithDuration:speed animations:^{        
+        view.frame = fromViewController.view.bounds;
+    }];
+    
+}
 @end
